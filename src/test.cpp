@@ -1,7 +1,11 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main(){
-  cout << "Dit is een test\n";
+  string a;
+  cout << "HALLO\nHoe heet je? ";
+  cin >> a;
+  cout << "oh, aangenaam " << a << "\n";
   return 0;
 }
