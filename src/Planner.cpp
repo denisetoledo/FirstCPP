@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 class toDo {
@@ -19,10 +20,7 @@ public:
   string getName(){return name;}
   string getDisc(){return disc;}
   string getDeadline(){return dead;}
-
-  bool getdone(int index){
-    return done[index];
-  }
+  bool getdone(int index){return done[index];}
 
   void setdone(int index){
     bool temp = done[index];
@@ -33,13 +31,12 @@ public:
     }
     cout << done[index] << endl;
   }
-
 };
 
 int main(){
-  toDo  test("test", "just a test", "a test");
-  test.setdone(1);
-  cout << test.getdone(1) << endl;
-  test.setdone(1);
+  toDo test("test", "just a test", "a test");
+  // vector<toDo> list;
+  // list.push_back(test);
   cout << test.getName() << endl;
+  return 0;
 }
